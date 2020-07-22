@@ -183,14 +183,11 @@ option {
 }
 
 .selected {
-	padding: var(--main-padding);
+	/*padding: 1.5rem 1.1rem 1rem 1.1rem;*/
 	width: 300px;
 	height: 50px;
 	border: 1px solid var(--main-border-color);
-	border-color: var(--main-border-color);
 	background-color: transparent;
-	/* border-width: var(--main-border-width); */
-	border-style: var(--main-border-style);
 	border-radius: 5px;
 	outline: none;
 	box-shadow: 1px 1px 2px var(--main-txt-color);
@@ -202,7 +199,8 @@ option {
 
 .selected::after {
 	content: "";
-	background: url("img/arrow-down.svg");
+	background: url("../../img/arrow-down.svg");
+	color: red;
 	background-size: contain;
 	background-repeat: no-repeat;
 
@@ -210,7 +208,7 @@ option {
 	height: 100%;
 	width: 32px;
 	right: 10px;
-	top: 5px;
+	top: 10px;
 
 	transition: all 0.4s;
 }
@@ -247,10 +245,13 @@ option {
 	border-radius: 0 8px 8px 0;
 }
 
-.select-box .option,
-.selected {
+.select-box .option {
 	padding: 12px 24px;
 	cursor: pointer;
+}
+
+.selected{
+	padding: 1rem;
 }
 
 .select-box .option:hover {
