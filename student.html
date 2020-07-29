@@ -4,199 +4,157 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>School Management-Student</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/school.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/school.css">
         <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
     </head>
     <body>
-
-
-
         <div id="main">
             <form action="" method="">
                 <section class="container">
                     <div class="major-container">
-
                         <div class="header">
                             <h2>student information</h2>
                         </div>
-
                         <div class="flex-box">
                             <div class="fields">
                                 <label for="firstname" class="label">first name</label>
-                                <input type="text" id="firstname"
-                                    class="input-control" name="firstname"
-                                    placeholder="Firstname" required/>
+                                <input
+                                    type="text"
+                                    id="firstname"
+                                    class="input-control"
+                                    name="firstname"
+                                    placeholder="Firstname"
+                                    required
+                                >
                             </div>
-
                             <div class="fields">
                                 <label for="lastname" class="label">last name</label>
-                                <input type="text" id="lastname"
-                                    class="input-control" name="lastname"
-                                    placeholder="Lastname" required/>
+                                <input
+                                    type="text"
+                                    id="lastname"
+                                    class="input-control"
+                                    name="lastname"
+                                    placeholder="Lastname"
+                                    required
+                                >
                             </div>
                         </div>
-
                         <div class="flex-box">
                             <div class="fields">
                                 <label for="email" class="label">email id</label>
-                                <input type="email" id="email"
-                                    class="input-control" name="email"
-                                    placeholder="Name@example.com" required/>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="input-control"
+                                    name="email"
+                                    placeholder="Name@example.com"
+                                    required
+                                >
                             </div>
-
                             <div class="fields">
-                                <label for="school" class="school">School</label>
-                                <div class="select-box">
-                                    <div class="options-container">
-
-                                        <div class="option">
-                                            <input type="radio" class="radio"
-                                                value="crutech" name="category"
-                                                />
-                                            <label>Crutech</label>
-                                        </div>
-
-                                        <div class="option">
-                                            <input type="radio" class="radio"
-                                                value="unical" name="category"
-                                                />
-                                            <label>Unical</label>
-                                        </div>
-
-                                        <div class="option">
-                                            <input type="radio" class="radio"
-                                                value="uniuyo" name="category"
-                                                />
-                                            <label>Uniuyo</label>
-                                        </div>
-
-                                        <div class="option">
-                                            <input type="radio" class="radio"
-                                                value="aksu" name="category" />
-                                            <label>Aksu</label>
-                                        </div>
-
-                                        <div class="option">
-                                            <input type="radio" class="radio"
-                                                value="uniport" name="category"
-                                                />
-                                            <label>Uniport</label>
-                                        </div>
-
-                                        <div class="option">
-                                            <input type="radio" class="radio"
-                                                value="unilag" name="category"
-                                                />
-                                            <label>Unilag</label>
-                                        </div>
-
-                                        <div class="option">
-                                            <input type="radio" class="radio"
-                                                value="uniabuja" name="category"
-                                                />
-                                            <label>Uniabuja</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="selected">
-                                    Select School
-                                </div>
-
-                                <div class="search-box">
-                                    <input type="text" placeholder="search..."
-                                        />
-                                </div>
+                                <label for="reg-no" class="label">
+                                    registration
+                                    number
+                                </label>
+                                <input
+                                    type="text"
+                                    id="reg-no"
+                                    class="input-control"
+                                    name="reg no"
+                                    placeholder="registration number"
+                                    required
+                                >
                             </div>
                         </div>
-
                         <div class="flex-box">
                             <div class="fields">
                                 <label for="faculty" class="label">faculty</label>
-                                <input type="text" id="faculty"
-                                    class="input-control" name="faculty"
+                                <input
+                                    type="text"
+                                    id="faculty"
+                                    class="input-control"
+                                    name="faculty"
                                     placeholder="Faculty"
-                                    required />
+                                    required
+                                >
                             </div>
-
                             <div class="fields">
                                 <label for="department" class="label">department</label>
-                                <input type="text" id="department"
-                                    class="input-control" name="department"
-                                    placeholder="department" required />
+                                <input
+                                    type="text"
+                                    id="department"
+                                    class="input-control"
+                                    name="department"
+                                    placeholder="department"
+                                    required
+                                >
                             </div>
                         </div>
-
-                        <div class="flex-box">
+                        <div class="select-options">
                             <div class="fields">
-                                <label for="reg-no" class="label">registration
-                                    number</label>
-                                <input type="text" id="reg-no"
-                                    class="input-control" name="reg no"
-                                    placeholder="registration number" required
-                                    />
+                                <label for="school" class="label">school</label>
+                                <select id="school" name="school">
+                                    <option value="Unical">Unical</option>
+                                    <option value="Crutech">Crutech</option>
+                                </select>
                             </div>
-
                             <div class="fields">
                                 <label for="gender" class="label">gender</label>
-                                <div class="select-box">
-                                    <div class="options-container gender">
-                                        <div class="option">
-                                            <input type="radio" class="radio"
-                                                value="male" name="category" />
-                                            <label>Male</label>
-                                        </div>
-
-                                        <div class="option">
-                                            <input type="radio" class="radio"
-                                                value="female" name="category"
-                                                />
-                                            <label>Female</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="selected">
-                                    Select Sex
-                                </div>
+                                <select id="gender" name="gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
                             </div>
                         </div>
-
                         <div class="flex-box">
                             <div class="fields">
                                 <label for="password" class="label">password</label>
-                                <input type="password" id="password"
-                                    class="input-control" name="password"
-                                    placeholder="Password" required/>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    class="input-control"
+                                    name="password"
+                                    placeholder="Password"
+                                    required
+                                >
                             </div>
-
                             <div class="fields">
-                                <label for="con pswrd" class="label">confirm
-                                    password</label>
-                                <input type="password" id="con-pswrd"
-                                    class="input-control" name="password"
-                                    placeholder="Confirm Password" required />
+                                <label for="con pswrd" class="label">
+                                    confirm
+                                    password
+                                </label>
+                                <input
+                                    type="password"
+                                    id="con-pswrd"
+                                    class="input-control"
+                                    name="password"
+                                    placeholder="Confirm Password"
+                                    required
+                                >
                             </div>
                         </div>
-
-                        <div class="text">
-                            <p>In Order To Process Your Registration, We Ask
-                                That You Provide The Following Information.
-                                Please Note That All Fields Marked With An
-                                Asterisk(<span>*</span>) are required.</p>
-                        </div>
-
-                        <div class="btns">
-                            <button type="reset" id="button" class="btn-cancel">Cancel</button>
-                            <button type="submit" id="submit-button"
-                                class="btn-submit">Submit</button>
+                        <div class="flex-box">
+                            <div class="text">
+                                <p>
+                                    In Order To Process Your Registration, We Ask
+                                    That You Provide The Following Information.
+                                    Please Note That All Fields Marked With An
+                                    Asterisk(
+                                    <span>*</span>
+                                    ) are required.
+                                </p>
+                            </div>
+                            <div class="btns">
+                                <button type="reset" id="button" class="btn-cancel">Cancel</button>
+                                <button type="submit" id="submit-button" class="btn-submit">Submit</button>
+                            </div>
                         </div>
                     </div>
                 </section>
             </form>
         </div>
     </body>
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
 </html>
