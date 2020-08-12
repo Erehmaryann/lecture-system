@@ -232,7 +232,7 @@ body {
 .video {
 	width: 90%;
 	height: 63vh;
-	margin: 10px 0 10px 0;
+	margin: 10px 0 8px 0;
 }
 
 .buttons input[type="file"] {
@@ -245,33 +245,41 @@ body {
 }
 
 .first label {
+	padding: 5px 6px;
 	border: 1px solid var(--main-border-color);
-	padding: 4px 3px;
 	border-radius: 5px;
 	font-size: 16px;
+	color: var(--main-txt-color);
 	box-shadow: 1px 1px 2px var(--main-txt-color);
 	cursor: pointer;
-	margin-bottom: 10px;
 }
 
 .end-button {
-	margin-top: 30px;
+	color: var(--main-txt-color);
 	border: 1px solid var(--main-border-color);
-	padding: 4px 3px;
 	border-radius: 5px;
 	font-size: 16px;
+	padding: 5px 6px;
+	margin-top: 1.8rem;
 	box-shadow: 1px 1px 2px var(--main-txt-color);
 	cursor: pointer;
 }
 
 .buttons {
 	width: 300px;
+	padding: 5px 6px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .video-column {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	height: 100vh;
 	flex: 65%;
 	background-color: var(--main-bg-color);
 	overflow: hidden;
@@ -354,7 +362,7 @@ body {
 	}
 
 	.video {
-		width: 90vw;
+		width: 95vw;
 		height: 50vh;
 	}
 
@@ -366,8 +374,10 @@ body {
 		max-height: 50vh;
 	}
 
-	.video-area {
+	.video-column {
+		/* height: 150vh; */
 		position: sticky;
 		top: 0;
+		z-index: 2;
 	}
 }
