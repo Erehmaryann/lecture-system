@@ -239,14 +239,16 @@ body {
 	display: none;
 }
 
-.first h4 {
-	margin-bottom: 5px;
+.head h4 {
+	margin-bottom: 10px;
 	color: var(--main-txt-color);
+	width: 200px;
 }
 
 .first label {
 	padding: 5px 6px;
 	border: 1px solid var(--main-border-color);
+	background-color: var(--main-bg-color);
 	border-radius: 5px;
 	font-size: 16px;
 	color: var(--main-txt-color);
@@ -254,9 +256,16 @@ body {
 	cursor: pointer;
 }
 
+.head-label {
+	display: flex;
+	flex-direction: column;
+}
+
 .end-button {
 	color: var(--main-txt-color);
+	width: 130px;
 	border: 1px solid var(--main-border-color);
+	background-color: var(--main-bg-color);
 	border-radius: 5px;
 	font-size: 16px;
 	padding: 5px 6px;
@@ -372,10 +381,11 @@ body {
 
 	.border {
 		max-height: 50vh;
+		max-width: 95vw;
 	}
 
 	.video-column {
-		/* height: 150vh; */
+		max-width: 98vw;
 		position: sticky;
 		top: 0;
 		z-index: 2;
